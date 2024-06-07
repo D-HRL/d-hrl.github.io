@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="keywords" content="Cooperation, Locomotion, Hierarchical reinforcement learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Learning a Distributed Hierarchical Locomotion Control for Embodied Cooperation</title>
+  <title>Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
+    function gtag(){
       dataLayer.push(arguments);
     }
 
@@ -88,14 +88,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Chuye Hong</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Kangyao Huang</a><sup>2</sup>,</span>
+              <a href="https://utkarshsinha.com">Kangyao Huang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Huaping Liu</a><sup>2</sup>,
+              <a href="https://jonbarron.info">Huaping Liu</a><sup>1</sup>,
             </span>
             {% comment %} <span class="author-block">
               <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
@@ -108,8 +108,8 @@
             </span>
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
-          </div> {% endcomment %}
+            </span> {% endcomment %}
+          </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Tsinghua University,</span>
@@ -258,31 +258,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+           In this work, we propose a distributed hierarchical locomotion control strategy for 
+           whole-body cooperation and demonstrate the potential for migration into large numbers 
+           of agents. Our method utilizes a hierarchical structure to break down complex tasks 
+           into smaller, manageable sub-tasks. By incorporating spatiotemporal continuity features, 
+           we establish the sequential logic necessary for causal inference and cooperative 
+           behaviour in sequential tasks, thereby facilitating efficient and coordinated control 
+           strategies. Through training within this framework, we demonstrate enhanced adaptability 
+           and cooperation, leading to superior performance in task completion compared to the 
+           original methods. Moreover, we construct a set of environments as the benchmark for 
+           embodied cooperation.
           </p>
         </div>
       </div>
@@ -445,10 +430,10 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+  author    = {Chuye Hong, Kangyao Huang, Huaping Liu},
+  title     = {Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation},
+  journal   = {CoRL},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
