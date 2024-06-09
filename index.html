@@ -82,28 +82,6 @@
   </div>
 </nav>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/hrl.png" alt="DRL Image" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">D-HRL</span>: demonstrate the information flow within the distributed 
-        hierarchical reinforcement learning, using scenario Cooperative Transport as an example. 
-        Here we maintain a centralized training but distributed control hierarchical reinforcement 
-        learning framework, where we decompose the complex behaviours into three levels: Upper Layer (UL), 
-        Middle Layer (ML), and Lower Layer (LL). UL module processes the external information $e_{t}$ 
-        including environmental perception and relative position to colleagues, extracting features and 
-        sending to ML; ML module is a recurrent neural network layer that maintains a recurrent state $h$ 
-        considering temporal and spatial correlation, and outputs a locomotion command into LL module; 
-        LL module is a pre-trained locomotion control layer that generates action $a_t$ and applies it 
-        to agent according to the proprioceptive observation $p_t$, where we have two modes: position 
-        and velocity. The goal of Cooperative Transport is to move a cylinder object to the red target 
-        zone collaboratively by a group of Ant robots.
-      </h2>
-    </div>
-  </div>
-</section>
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -223,6 +201,28 @@
   </div>
 </section>
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <h2 class="title is-3">Method</h2>
+      <img src="./static/images/hrl.png" alt="DRL Image" style="width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">D-HRL</span>: demonstrate the information flow within the distributed 
+        hierarchical reinforcement learning, using scenario Cooperative Transport as an example. 
+        Here we maintain a centralized training but distributed control hierarchical reinforcement 
+        learning framework, where we decompose the complex behaviours into three levels: Upper Layer (UL), 
+        Middle Layer (ML), and Lower Layer (LL). UL module processes the external information e
+        including environmental perception and relative position to colleagues, extracting features and 
+        sending to ML; ML module is a recurrent neural network layer that maintains a recurrent state $h$ 
+        considering temporal and spatial correlation, and outputs a locomotion command into LL module; 
+        LL module is a pre-trained locomotion control layer that generates action a and applies it 
+        to agent according to the proprioceptive observation p, where we have two modes: position 
+        and velocity. The goal of Cooperative Transport is to move a cylinder object to the red target 
+        zone collaboratively by a group of Ant robots.
+      </h2>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
